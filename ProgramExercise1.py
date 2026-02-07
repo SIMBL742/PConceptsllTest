@@ -8,7 +8,7 @@ buyer_count = 0
 #If statements wrapped in a while loop to create strict purchase rules
 while vacant_tickets > 0:
     #variable to monitor int of tickers from each buyer
-    user_buy = int(input('How many tickets for purchase?: '))
+    user_buy = int(input('Hello Park Attendee! How many tickets for purchase today?: '))
 
     #If statement to keep ticket purchase between 1 and 4
     if user_buy < 1 or user_buy > 4:
