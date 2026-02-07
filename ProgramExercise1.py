@@ -1,5 +1,5 @@
 #Set initial ticket amount
-TICKET_START = 20
+TICKET_START = 10
 #Link vacant_tickets to initial ticket amount
 vacant_tickets = TICKET_START
 #create variable for buyer counter
@@ -10,7 +10,7 @@ while vacant_tickets > 0:
     #variable to monitor int of tickers from each buyer
     user_buy = int(input('How many tickets for purchase?: '))
 
-    #If statement to keep ticket purchase between 1 to 4
+    #If statement to keep ticket purchase between 1 and 4
     if user_buy < 1 or user_buy > 4:
         print('invalid input')
         continue
