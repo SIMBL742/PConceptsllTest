@@ -95,7 +95,6 @@ def main():
     for phrase, count in triggers.items():
         print(f"{phrase}: {count}")
 #execute code
-if __name__ == "__main__":
     main()
 
 
