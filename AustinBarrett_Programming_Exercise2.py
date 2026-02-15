@@ -34,7 +34,7 @@ SPAM_PHRASES = ["free money",
 #Function to pull email
 def get_email_message():
     #ask user to input email message
-    print("Enter email message. Once finished hit ENTER to complete program")
+    print("Enter email message. Once finished hit ENTER to complete program: ")
     #create a list
     messages= []
     #create while loop that continues while there is a viable input
@@ -52,6 +52,7 @@ def get_email_message():
 
 #A function dedicated to spam detection
 def spam_detection(message,spam_phrase):
+    message = message.lower()
     #our accumulator variable
     spam_score = 0
     #Dictionary to mark our spam and amount detected
@@ -94,5 +95,7 @@ def main():
     for phrase, count in triggers.items():
         print(f"{phrase}: {count}")
 #execute code
-main()
+if __name__ == "__main__":
+    main()
+
 
